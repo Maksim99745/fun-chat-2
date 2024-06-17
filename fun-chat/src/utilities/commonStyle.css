@@ -1,0 +1,88 @@
+main,
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+main,
+body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.479);
+}
+
+main,
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.445);
+  border-radius: 20px;
+}
+
+.fadeOut {
+  opacity: 0;
+  animation: fadeOutAnimation 0.8s ease-in forwards;
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.fadeIn {
+  animation: fadeInAnimation 0.5s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+input {
+  height: 25px;
+  line-height: 20px;
+  padding-left: 1rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2470588235);
+  color: #ffffff;
+  transition: 0.5s ease;
+}
+input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.error-modal {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: rgba(145, 162, 177, 0.3294117647);
+}
+
+.error-modal_visible {
+  display: flex;
+  z-index: 2;
+}
+
+.error-modal__message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  border: 3px solid #ffffff;
+  margin: 270px auto;
+  border: 2px solid rgba(10, 10, 10, 0.5058823529);
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 350px;
+  height: 100px;
+  z-index: 2;
+}/*# sourceMappingURL=commonStyle.css.map */

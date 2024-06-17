@@ -1,0 +1,65 @@
+@import url(./loginPage/loginView/loginPage.scss);
+@import url(./aboutPage/about.scss);
+@import url(./chatPage/chat.scss);
+@import url(./utilities/commonStyle.scss);
+
+@font-face {
+    font-family: Roboto;
+    src: url(./../public/Roboto-Regular.ttf);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background: linear-gradient(90deg, rgb(5, 1, 75) 0%, rgb(6, 62, 146) 54%);
+    font-family: Roboto;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font: 14px #ffffff;
+}
+
+main {
+    display: flex;
+    background: linear-gradient(90deg, rgb(5, 1, 75) 0%, rgb(6, 62, 146) 54%);
+    font-family: Roboto;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font: 14px #ffffff;
+}
+
+.button-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    transition: 0.2s linear;
+    background: #0b63f6;
+    cursor: pointer;
+}
+
+.button-element:disabled {
+    background-color: #dddddd;
+    color: #666666;
+    cursor: not-allowed;
+    border: 1px solid #999999;
+    opacity: 0.6;
+}
+
+@media (hover: hover) {
+    .button-element:hover {
+        box-shadow:
+            0 0 0 2px white,
+            0 0 0 4px #3c82f8;
+    }
+}
